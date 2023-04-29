@@ -160,7 +160,7 @@ module WordSearch
             x = col * box_size
             pdf.bounding_box [x, y], width: box_size, height: box_size do
               pdf.text(@grid[row, col].upcase, align: :center, valign: :center,
-                color: ((page == 1 && @solution[row, col]) ? "ff0000" : "000000"))
+                color: ((page == 1 && @solution[row, col]) ? "000000" : "CCCCCC"))
             end
           end
         end
